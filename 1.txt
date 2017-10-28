@@ -1,0 +1,11 @@
+Reasons why its a better diabetic care app( different from traditional apps):-
+
+It has an automated mode for measuring sugar levels ie. with the help of AR & also has the option to add data manually.
+
+It not only reminds of the req. insulin dosage but also uses it as a parameter to check your diabetes & also reminds 
+the user about how long your current insulin cartirage(320-330ml) will last and when they will needing more.
+
+Another thing which is additional as compared to the other traditional apps is it has a list of trusted & companies which manufacture
+insulin along with their contacts to deliver at their doorstep.
+
+(for reference trditional apps like Diabetes M , mySugr etc rest sugar monitering & insulin manager apps) 
