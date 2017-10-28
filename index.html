@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DiabetAR</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="icon" type="image" href="logo1.png">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli|Saira|Contrail+One|Saira+Extra+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<header id="header">
+		<!-- <h1>DiabetAR</h1>
+		<hr style="width:15%; height:3px; background:black; margin-bottom:110px"> -->
+		<img src="logo.png" class="img-fluid" style="width:50%; margin-left:27%; margin-top:90px; margin-bottom:90px">
+		<p>Using Augumented Reality and scanning the colour of the glucometer strip it can detect the approximate range of the sugar level and suggest the required insulin dosage and track your glucose record. Gives regular reminders on when to take your next insulin cartridge and remind you of your insulin comsumption. Its a hectic job to order insulin so this app provides list of companies and their contacts accesible to the user.</p>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: rgba(34, 34, 34, 1)">
+			<a class="navbar-brand" href="#"><img src="images/logo.png" style="width:50px; height:auto"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+				<ul class="navbar-nav nav-fill">
+				  <li class="nav-item">
+				    <a class="nav-link" href="#header">HOME </a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#about_us">ABOUT DiabetAR </a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#check">CHECK</a>
+				  </li>
+				</ul>
+			</div>
+		</nav>
+		<div class="about_us" id="about_us">
+			<div class="intro">
+				ABOUT 
+			</div>
+			<div class="info">
+				An AR app which can manage your diabetes and suggest you to live your diabetic life better.
+				<h1>Glucose Color Mapping</h1>
+				<div class="colors">
+					<div class="color 1">Sugar Level: 0</div>
+					<div class="color 2">Sugar Level: 30</div>
+					<div class="color 3">Sugar Level: 80</div>
+					<div class="color 4">Sugar Level: 160</div>
+					<div class="color 5">Sugar Level: 300</div>
+					<div class="color 6">Sugar Level: >450</div>
+				</div>
+				
+				<h1>ADVANTAGES</h1>
+				<hr style="width:10%; height:3px; background:white; margin-bottom:40px; margin-top:0">
+				<ul>
+					<li>Tracking sugar levels are easier.</li>
+					<li>Managing your diet and insulin dosage is easier</li>
+					<li>Costly blood test like HBA1C now could be done at your home.</li>
+					<li>Will also help to set your day-to-day workout routine according to your sugar level ranges.</li>
+				</ul>
+				<hr style="width:100%; height:1px; background:white; margin:40px auto">
+				<h1 style="margin:60px; margin-bottom:0">Why DiabetAR's better</h1>
+				<hr style="width:10%; height:3px; background:white; margin-bottom:40px; margin-top:0">
+				<ol>
+					<li>It has an automated mode for measuring levels i.e. with the help of AR and even has the option for adding data manually.</li>
+					<li>Not only reminds of the required insulin dosage but also uses it as a parameter to check your diabetes and even reminds the user how long his/her current insulin catridge's gonna lsat and when they'll need more.</li>
+					<li>Compared to other traditional apps it has a list of trusted companies which manufacture insulin along with their contact for doorstep delivery.</li>
+				</ol>
+				<p>(for reference traditional apps like Diabetes M,  mySugar etc rest sugar monitoring & managing apps.)</p>
+			</div>
+		</div>
+		<div class="check" id="check">
+			<div class="intro">
+				GIVE IT A TRY!
+			</div>
+			<div class="info">
+				Get the the app to find your HBA1C %.<br>	
+				  <div class="form-group" style="margin:30px">
+				    <label for="enter">HBA1C number</label>
+				    <input type="text" class="form-control" id="enter" aria-describedby="emailHelp" placeholder="Enter your Mean Blood Sugar">
+				  </div>
+				  <button type="submit" class="btn btn-primary">Go</button>
+				<p class="answer"></p>
+				<script type="text/javascript">
+					$("button").on("click",function(){
+						var t = $("input").val()/18;
+						$("input").val("");
+						$("p.answer").text("Your HBA1C % is: " + t);
+					})
+				</script>
+			</div>
+		</div>
+</body>
+</html>
